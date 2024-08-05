@@ -11,12 +11,5 @@ rl.on('line', function (line) {
 }).on('close', function () {
     str = input[0];
     n = Number(input[1]);
-    let answer = ""
-    let i = 0
-    while (i<n){
-     answer = answer + str
-        i++;
-    }
-  console.log(answer)
-
+    console.log(str.repeat(n))
 });
